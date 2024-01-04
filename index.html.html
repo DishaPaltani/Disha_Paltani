@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation1</title>
+    <style>
+        @keyframes disha {
+            0% {
+                
+
+            }
+            50%{
+                
+            }
+            98%{
+                transform: scale(1.5); 
+            }
+            100%{
+                opacity: 0;
+                
+            }
+
+
+            
+        }
+body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+
+}
+.black-box{
+       height: 70vh;
+       width: 60%;
+       background-color: black;
+       margin: 100px;
+       position: relative;
+       
+       
+
+
+}
+.inside-box {
+    height: 40vh;
+    width: 40%;
+    border: 1px purple solid;
+    position: absolute;
+    margin: 100px 0 0 250px;
+    border-radius: 5px;
+    box-shadow: purple 0px 1px 2px, rgb(58, 20, 58) 0px 2px 4px, purple 0px 4px 8px, purple 0px 8px 16px, purple 0px 16px 32px, purple 0px 32px 64px;
+    animation: disha .9s ease infinite;
+
+}
+    </style>
+</head>
+<body>
+    <div class="black-box">
+      <div class="inside-box">
+
+      </div>
+
+    </div>
+</body>
+</html>
